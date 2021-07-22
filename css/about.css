@@ -1,0 +1,157 @@
+
+.main-about{
+
+	margin: 40px 5px;
+	display: flex;
+	justify-content: center;
+	font-family: 'STIX Two Math', serif;
+}
+.main-about h4{
+	color: rgb(206, 136, 44);
+	margin: 20px auto;
+	font-size: x-large;
+	border-bottom: 5px solid;
+	width: 50%;
+}
+
+.about{
+	width: 100%;
+	padding: 20px;
+	border-radius: 20px;
+	text-align: center;
+	background-color: #C9D8B6;
+}
+#slider figure{
+	margin: 15px auto;
+	display: grid;
+	gap: 10px;
+	height: 25%;
+	grid-template-columns: 1fr;
+	
+}
+#slider p{
+	text-align: center;
+	font-size: x-large;
+	color: #C68B59;
+	width: 25vh;
+	background-color: #F7DAD9;
+	margin: auto;
+	padding: 15px;
+	border-radius: 10px;
+	margin-bottom: 25px;
+}
+
+.spon1{
+	align-self: center;
+	justify-self: center;
+	margin: 15px;
+	width: 150px;
+	height: 250px;
+	
+}
+.spon2{
+	align-self: center;
+	justify-self: center;
+	margin: 15px;
+	width: 150px;
+	height: 250px;
+
+}
+.spon3{
+	align-self: center;
+	justify-self: center;
+	margin: 15px;
+	width: 150px;
+	height: 250px;
+}
+.spon4{
+	align-self: center;
+	justify-self: center;
+	margin: 15px;
+	width: 140px;
+	height: 250px;
+}
+
+@media screen and (min-width: 400px) {
+	.main-about{
+		margin-top: 35px 50px;
+		margin-bottom: 35px;
+	}
+	#slider figure{
+		margin: 15px auto;
+		display: grid;
+		gap: 10px;
+		grid-template-columns:  auto auto;
+		
+	}
+	
+	
+}
+
+@media screen and (min-width: 650px) {
+	.main-about{
+		margin-top: 35px;
+		margin-bottom: 35px;
+		margin-left: 150px;
+		margin-right: 150px;
+		display: flex;
+		
+	}
+	#slider figure{
+		margin: 15px auto;
+		display: grid;
+		gap: 0;
+		grid-template-columns: auto auto auto auto;
+		
+	}
+	#slider p{
+		width: 35vh;
+	}
+	
+}
+@media screen and (min-width: 750px) {
+	.main-about{
+		margin-top: 150px;
+		margin-bottom: 100px;
+		margin-left: 150px;
+		margin-right: 150px;
+		display: flex;
+		
+	}
+
+	#slider p{
+		width: 50vh;
+	}
+	
+}
+
+@media screen and (min-width: 900px) {
+	.main-about{
+		margin-top: 35px;
+		margin-bottom: 35px;
+		margin-left: 250px;
+		margin-right: 250px;
+		display: grid;
+		grid-template-rows: 1fr;
+		align-self: center;
+		justify-self: center;
+		
+	}
+}
+@media screen and (min-width: 1440px) {
+	.main-about{
+		margin-left: 300px;
+		margin-right: 300px;
+	}
+}
+@media screen and (min-width: 2000px) {
+	.main-about{
+		margin-top: 100px;
+		margin-bottom: 100px;
+		margin-left: 550px;
+		margin-right: 550px;
+
+	}
+	
+}
+
