@@ -1,3 +1,8 @@
+const image = document.querySelector('.thumb')
+image.addEventListener('click', function () {
+  showImage(this);
+});
+
 function showImage(imgs) {
   var expandImg = document.getElementById("expandedImg");
   var imgText = document.getElementById("imgtext");

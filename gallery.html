@@ -39,35 +39,7 @@
 
   <!-- Content continue -->
   <main class="container">
-
-    <div class="row">
-      <div class="column">
-        <img src="./image/image1.jpeg" alt="Nature" style="width:100%" onclick="showImage(this);">
-      </div>
-      <div class="column">
-        <img src="./image/image2.jpeg" alt="Snow" style="width:100%" onclick="showImage(this);">
-      </div>
-      <div class="column">
-        <img src="./image/image3.jpeg" alt="Mountains" style="width:100%" onclick="showImage(this);">
-      </div>
-      <div class="column">
-        <img src="./image/image4.jpeg" alt="Lights" style="width:100%" onclick="showImage(this);">
-      </div>
-    </div>
-    <div class="row">
-      <div class="column">
-        <img src="./image/image1.jpeg" alt="Nature" style="width:100%" onclick="showImage(this);">
-      </div>
-      <div class="column">
-        <img src="./image/image2.jpeg" alt="Snow" style="width:100%" onclick="showImage(this);">
-      </div>
-      <div class="column">
-        <img src="./image/image3.jpeg" alt="Mountains" style="width:100%" onclick="showImage(this);">
-      </div>
-      <div class="column">
-        <img src="./image/image4.jpeg" alt="Lights" style="width:100%" onclick="showImage(this);">
-      </div>
-    </div>
+    <div id="gallery"></div>
 
     <div class="showImage">
       <div class="showImageContainer">
@@ -115,9 +87,35 @@
       </div>
     </div>
   </footer>
-  <script src="./gallery.js">
+  <script src="./js/gallery.js">
   </script>
+  <script>
+    var imgArray = new Array();
+    imgArray[0] = new Image();
+    imgArray[0].src = './image/image1.jpeg';
+    imgArray[0].alt = 'Image Title';
+    imgArray[0].class = 'thumb';
 
+    imgArray[1] = new Image();
+    imgArray[1].src = './image/image2.jpeg';
+    imgArray[1].alt = 'Image Title';
+
+    imgArray[2] = new Image();
+    imgArray[2].src = './image/image2.jpeg';
+    imgArray[2].alt = 'Image Title';
+
+    imgArray[3] = new Image();
+    imgArray[3].src = './image/image3.jpeg';
+    imgArray[3].alt = 'Image Title';
+
+    function showImageList() {
+      var gallery = document.getElementById("gallery");
+      for (i = 0; i < imgArray.length; i++) {
+        gallery.appendChild(imgArray[i]);
+      }
+    }
+    showImageList();
+  </script>
 </body>
 
 </html>
